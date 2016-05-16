@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mek @ GitHub</title>
+    <link>http://mek.github.io/</link>
+    <description>Recent content on Mek @ GitHub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Apr 2016 14:05:22 -0400</lastBuildDate>
+    <atom:link href="http://mek.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://mek.github.io/about/</link>
+      <pubDate>Tue, 26 Apr 2016 14:05:22 -0400</pubDate>
+      
+      <guid>http://mek.github.io/about/</guid>
+      <description>&lt;p&gt;About&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://mek.github.io/post/linux/</link>
+      <pubDate>Thu, 21 Apr 2016 12:21:27 -0400</pubDate>
+      
+      <guid>http://mek.github.io/post/linux/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
