@@ -1,77 +1,88 @@
-  <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>test 1</title>
+
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> test 1 </title>
+    <link href="http://mek.github.io/css/bootstrap-theme.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Arbutus+Slab&family=Cabin:600&family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     
-	<link rel="stylesheet" href="http://mek.github.io//css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://mek.github.io//css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://mek.github.io//css/theme.css" />
-    
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    
-    <link href="" rel="alternate" type="application/rss+xml" title="Pure as the Driven Slush" />
-</head>
+    <link href="http://mek.github.io/css/HPstyles.css" rel="stylesheet">
+    <link href="http://mek.github.io/css/hugofont.css" rel="stylesheet">
+    <link href="http://mek.github.io/css/owl.carousel.css" rel="stylesheet">
+    <link href="http://mek.github.io/css/owl.theme.default.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-right">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://mek.github.io/">Pure as the Driven Slush</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-right">
-            <ul class="nav navbar-nav navbar-right">
-                
-                
-            </ul>
-        </div>
-    </div>
-</nav>
 
-    <div class="container page-wrap">
-      <h1>test 1</h1>
-      <small class="post-meta">Aug 26, 2016</small>
-      <div class="post-content">
-        
-        
+
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <ul class="list-inline">
+            <li><a href="http://twitter.com/spf13" class="icon-twitter icon-2x"></a></li>
+            <li><a href="http://github.com/spf13/hugo" class="icon-octocat icon-2x"></a></li>
+        </ul>
+        <hr>
+        <p>Copyright &copy; Steve Francia 2013&ndash;2014</p>
       </div>
     </div>
-    <footer class="site-footer">
-	<div class="container">
-		<h4>Pure as the Driven Slush</h4>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="form-group">
-					<p></p>
-					<a href="mailto:"></a>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<p>
-						<span class="fa fa-fw fa-github"></span>
-						<a href="https://github.com/"></a>
-						<br>
-						<span class="fa fa-fw fa-twitter"></span>
-						<a href="https://twitter.com/"></a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  </div>
 </footer>
 
-    <script src="http://mek.github.io//js/jquery-2.1.4.min.js"></script>
-<script src="http://mek.github.io//js/bootstrap.min.js"></script>
 
-  </body>
+
+
+<script src="http://mek.github.io/js/jquery-2.1.1.min.js"></script>
+<script src="http://mek.github.io/js/owl.carousel.min.js"></script>
+
+<script>
+$(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      || location.hostname == this.hostname) {
+
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+});
+$('.owl-carousel').owlCarousel({
+loop:true,
+margin:10,
+nav:true,
+autoplay:true,
+autoplayHoverPause:true,
+autoplayTimeout:3000,
+responsive:{
+    0:{
+        items:1
+    },
+    1000:{
+        items:3
+    },
+}
+})
+</script>
+
+
+</body>
+
 </html>
+
